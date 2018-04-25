@@ -3,6 +3,7 @@ import os
 import collections
 import nltk
 
+nltk.download('averaged_perceptron_tagger')
 
 def make_list_flat(_list):
     """ [(1,2), (3,4)] -> [1, 2, 3, 4]"""
@@ -97,7 +98,6 @@ if __name__ == '__main__':
         file_names = get_file_names(path)
         files_syntax_trees = get_syntax_trees(file_names)
         function_names = get_all_function_names(files_syntax_trees)
-        print(function_names)
         verbs = get_all_verbs(function_names)
         wds += get_top_verbs(verbs)
 
