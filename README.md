@@ -18,6 +18,12 @@ git clone git@github.com:samuraii/otus_python_web_-1.git
 python count_verbs.py
 ```
 
+Чтобы запустить тесты:
+
+```bash
+python tests.py
+```
+
 Результат:
 
 ```bash
